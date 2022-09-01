@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    color: aqua;
+    font-family: sans-serif;
+}
+
+body {
+    background: #1e1e1e;
+}
+
+.block {
+    width: 100%;
+    border-radius: 0;
+    border: 0.1px solid transparent;
+}
+
+body::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.block .header {
+    height: 90px;
+    width: calc(100% - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #8e8e8e;
+    background: #1e1e1e;
+    padding: 0 30px;
+    margin: 30px;
+}
+
+.block .header input {
+    width: 200px;
+    color: aqua;
+    box-shadow: 0 0 10px #8e8e8e;
+    background: #1e1e1e;
+    padding: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.block .header input:hover {
+    color: white;
+    background: #000;
+}
+
+.block .header input:hover::placeholder {
+    color: white;
+}
+
+.block .header input::placeholder {
+    color: aqua;
+}
+
+.addModal {
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    padding: 0 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #8e8e8e;
+    background: #1e1e1e;
+    transition: .5s;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.addModal input {
+    width: 200px;
+    color: aqua;
+    box-shadow: 0 0 10px #8e8e8e;
+    background: #1e1e1e;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.addModal input:hover {
+    color: white;
+    background: #000;
+}
+
+.addModal input:hover::placeholder {
+    color: white;
+}
+
+.addModal input::placeholder {
+    color: aqua;
+}
+
+.editModal {
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    padding: 0 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #8e8e8e;
+    background: #1e1e1e;
+    transition: .5s;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.editModal input {
+    width: 200px;
+    color: aqua;
+    box-shadow: 0 0 10px #8e8e8e;
+    background: #1e1e1e;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.editModal input:hover {
+    color: white;
+    background: aqua;
+}
+
+.editModal input:hover::placeholder {
+    color: white;
+}
+
+.editModal input::placeholder {
+    color: aqua;
+}
+
+table {
+    width: calc(100% - 60px) !important;
+    box-shadow: 0 0 10px #8e8e8e;
+    margin: auto 30px;
+    border: 0.1px solid transparent;
+    overflow: scroll;
+}
+
+thead {
+    background: #111111;
+    border: 0.1px solid transparent;
+}
+
+table tbody tr td .btn {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.btn {
+    background: #1e1e1e;
+    box-shadow: 0 0 10px #8e8e8e;
+    color: aqua;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+tr td,
+th {
+    border-radius: 0;
+}

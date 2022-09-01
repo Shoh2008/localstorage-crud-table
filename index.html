@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/respons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="block">
+        <div class="header">
+            <input type="search" placeholder="Search" id="searchInput">
+            <button class="btn" onclick="opener()">Add User</button>
+        </div>
+        <div class="body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"> </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="addModal" id="addModal">
+        <h2>Add new user</h2>
+        <input type="text" placeholder="Name" id="nameAdd">
+        <input type="number" placeholder="Age" id="ageAdd">
+        <input type="text" placeholder="City" id="cityAdd">
+        <div>
+            <button onclick="cancleAdd()" class="btn">Cancle</button>
+            <button onclick="Add()" class="btn">Add</button>
+        </div>
+    </div>
+
+    <div class="editModal" id="editModal">
+        <h2>Edit new user</h2>
+        <input type="text" placeholder="Name" id="nameEdit">
+        <input type="number" placeholder="Age" id="ageEdit">
+        <input type="text" placeholder="City" id="cityEdit">
+        <button onclick="cancleEdit()" class="btn">Cancle</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

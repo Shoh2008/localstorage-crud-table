@@ -1,0 +1,13 @@
+@media screen and (max-width: 450px) {
+    .block .header input,
+    .block .header button {
+        width: 100% !important;
+    }
+    .body{
+        overflow: scroll;
+    }
+    .body::-webkit-scrollbar{
+        height: 0;
+        width: 0;
+    }
+}
